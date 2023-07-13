@@ -1,2 +1,2 @@
 #!/bin/bash
-cdd $CFILE >main.c;
+export  $CFILE=main.c;
