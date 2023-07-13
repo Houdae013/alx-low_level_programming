@@ -1,2 +1,2 @@
 #!/bin/bash
-cdd $CFILE >c
+cdd $CFILE >main.c;
