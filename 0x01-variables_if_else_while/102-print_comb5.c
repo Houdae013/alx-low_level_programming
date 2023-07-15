@@ -14,9 +14,10 @@ int main(void)
 		{
 		
 		j = k;
-		l = i + 1;
+		l = i;
 	while (j <= 9)
-	{while (l <= 9)
+	{
+		while (l <= 9)
 		{
 		putchar('0' + k);
 		putchar('0' + i);
