@@ -13,7 +13,7 @@ int main(void)
 		for (i = 0; i < 9; i++)
 		{
 		j = k;
-		l = i;
+		l = i + 1;
 	while (j <= 9)
 	{
 		while (l <= 9)
@@ -23,8 +23,8 @@ int main(void)
 		putchar(32);
 		putchar('0' + j);
 	putchar('0' + l);
-	 if (k < 7)
-	{
+			if (k < 7)
+			{
 	putchar(',');
 	putchar(32); }
 	l = l + 1; }		
