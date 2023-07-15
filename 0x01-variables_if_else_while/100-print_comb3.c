@@ -8,18 +8,18 @@ int main(void)
 {
 	int i, j = 0;
 
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < 9; i++)
 	{
-	while (j <= 9)
+		j = i;
+	while (j <= 8)
 	{putchar('0' + i);
 	putchar('1' + j);
-	if (i < 9)
+	if (i < 8)
 	{
 	putchar(',');
 	putchar(32); }
 	j = j + 1; }
 	}
-	putchar('0' + 89);
 	putchar('\n');
 	return (0);
 }
