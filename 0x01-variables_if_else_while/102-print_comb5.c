@@ -23,7 +23,7 @@ int main(void)
 		putchar(32);
 		putchar('0' + j);
 	putchar('0' + l);
-			if (k < 7)
+			if (k < 7 )
 			{
 	putchar(',');
 	putchar(32); }
