@@ -10,7 +10,7 @@ int main(void)
 
 	for (i = 0; i < 9; i++)
 	{
-		j = i
+		j = i;
 	while (j <= 8)
 	{putchar('0' + i);
 	putchar('1' + j);
