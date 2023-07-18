@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * 1-alphabet.c : prints the alphabet
+ * print_alphabet - prints the alphabet
  *
  */
 void print_alphabet(void)
