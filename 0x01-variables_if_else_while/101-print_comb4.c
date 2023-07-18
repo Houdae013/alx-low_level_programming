@@ -10,7 +10,7 @@ int main(void)
 
 	for (k = 0; k < 8; k++)
 	{
-		for (i = 0; i < 9; i++)
+		for (i = k + 1; i < 9; i++)
 	{
 		j = i;
 	while (j <= 8)

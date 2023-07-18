@@ -6,10 +6,31 @@
  */
 int main(void)
 {
-	int i;
+	int l, k, i, j = 0;
 
-	for (i = 01; i < 100; i++)
-	{putchar('00\t' '0' + i); }
+	for (k = 0; k <= 9; k++)
+	{
+		for (i = 0; i < 9; i++)
+		{
+		j = k;
+	while (j <= 9)
+	{
+		l = i + 1;
+		while (l <= 9 && l > i)
+		{
+		putchar('0' + k);
+		putchar('0' + i);
+		putchar(32);
+		putchar('0' + j);
+	putchar('0' + l);
+			if (k < 7 )
+			{
+	putchar(',');
+	putchar(32); }
+	l = l + 1; }
+		j = j + 1; }
+	}
+	}
 	putchar('\n');
 	return (0);
 }
