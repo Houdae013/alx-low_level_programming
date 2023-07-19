@@ -27,18 +27,18 @@ void times_table(void)
 			if (((i * j) / 10) == 0)
 			{_putchar (j * i + '0');
 			 _putchar(32);
-			}
+			} }
 			else
 			{_putchar (((i * j) / 10) + '0');
 				_putchar (((i * j) % 10) + '0');
-			} }
+			} 
 			if (j < 9)
 			{
 
 			_putchar (',');
 			_putchar(32); }
 			
-		} }
+		}
 		_putchar('\n');
 	}
 }
