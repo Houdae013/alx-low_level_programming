@@ -15,7 +15,6 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			if (i == 0)
-<<<<<<< HEAD
 			{_putchar('0');
 				if (j < 9)
 				{
@@ -46,36 +45,3 @@ void times_table(void)
 		_putchar('\n');
 	}
 } }
-=======
-		{
-			_putchar('0');
-		 if (j < 9)
-		 {
-			 _putchar (',');
-			 _putchar(32);
-			 _putchar (32);
-		 } }
-		else
-			{
-			if (((i * j) / 10) == 0)
-			{
-				_putchar (j * i + '0');
-				if (j < 9)
-			{
-				_putchar (',');
-				_putchar(32);
-				_putchar (32);
-			}
-			}
-			else
-			{
-				_putchar (((i * j) / 10) + '0');
-			 _putchar (((i * j) % 10) + '0');
-			 if (j < 9)
-			 {
-				 _putchar (',');
-				 _putchar(32); }
-			} } }
-	 _putchar('\n');
-	} }
->>>>>>> 5461230c8cb5134365948ab055f9345d54f9374c
