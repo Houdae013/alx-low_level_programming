@@ -6,22 +6,20 @@
  *
  */
 
-int main(void)
+int  main(void)
 {
-	int i, p = 0, g = 0;
-	int n = 612852475143;
+	int i = 0, p = 0, g = 0;
+	long int n = 612852475143;
 
-	while (n > 1)
+	for (i = 2; i <= n; i++)
 	{
-		for (i = 2; i <= n; i++)
+		if (n % i == 0)
 		{
-			if (n % i == 0)
-			{
-				p = i;
-				n = n / i;
-			}
-			if (p >= g)
-				g = p;
+			p = i;
+			n = n / i;
 		}
+		if (p >= g)
+			g = p;
 	}
+	return (0);
 }
