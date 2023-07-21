@@ -22,5 +22,6 @@ int  main(void)
 			g = p;
 	}
 	printf("%d", g);
+	printf("\n");
 	return (0);
 }
