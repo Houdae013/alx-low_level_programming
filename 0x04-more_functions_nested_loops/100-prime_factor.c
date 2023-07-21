@@ -21,5 +21,6 @@ int  main(void)
 		if (p >= g)
 			g = p;
 	}
+	printf("%d", g);
 	return (0);
 }
