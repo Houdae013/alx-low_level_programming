@@ -8,18 +8,15 @@
 
 void print_number(int n)
 {
-	if (n >= 1000)
+	int p = n;
+
+
+	if (n < 0)
 	{
-		_putchar('0' + n / 1000);
+		_putchar('-');
+		p = -n;
 	}
-	else if (n >= 100)
-	{
-		_putchar('0' + n / 100);
-	}
-	else if (n >= 10)
-	{
-		_putchar('0' + n / 10);
-	}
-	_putchar('0' + n % 10);
-	_putchar('\n');
+	if (p / 10 > 0)
+		print_number(p / 10);
+	_putchar('0' + p % 10);
 }
