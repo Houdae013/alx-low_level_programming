@@ -16,5 +16,5 @@ void _puts(char *str)
 		_putchar(c);
 		str++;
 	}
-	printf("\n");
+	_putchar('\n');
 }
