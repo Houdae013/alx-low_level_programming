@@ -7,8 +7,6 @@
 
 void _puts(char *str)
 {
-	int i;
-	
 	while (*str)
 	{
 		printf("%c", *str);
