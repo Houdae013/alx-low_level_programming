@@ -7,9 +7,13 @@
 
 void _puts(char *str)
 {
+	char c;
+
+
 	while (*str)
 	{
-		printf("%c", *str);
+		c = *str;
+		_putchar(c)
 		str++;
 	}
 	printf("\n");
