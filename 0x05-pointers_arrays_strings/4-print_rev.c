@@ -7,7 +7,7 @@
 
 void print_rev(char *s)
 {
-	int i = length - 1;
+	int i = length(str) - 1;
 	char c = *s;
 
 	*s = s[i];
