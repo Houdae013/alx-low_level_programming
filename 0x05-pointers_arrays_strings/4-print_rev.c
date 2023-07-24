@@ -9,10 +9,11 @@
 
 void print_rev(char *s)
 {
-	char c = s[i];
+	char c;
 	int i = 0;
 
-	
+
+	c = s[i];
 	while (*s)
 	{
 		s++;
