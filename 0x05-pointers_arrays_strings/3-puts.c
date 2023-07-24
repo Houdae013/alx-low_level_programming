@@ -13,7 +13,7 @@ void _puts(char *str)
 	while (*str)
 	{
 		c = *str;
-		_putchar(c)
+		_putchar(c);
 		str++;
 	}
 	printf("\n");
