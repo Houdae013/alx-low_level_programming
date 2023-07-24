@@ -13,9 +13,9 @@ void rev_string(char *s)
 
 	while (*p)
 	{
-		s++;
+		p++;
 	}
-	s--;
+	p--;
 	while (s < p)
 	{
 		c = *s;
