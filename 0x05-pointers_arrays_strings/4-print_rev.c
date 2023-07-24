@@ -9,10 +9,12 @@
 
 void print_rev(char *s)
 {
-	int i = strln(str) - 1;
 	char c = *s;
 
-	*s = s[i];
+	while (*s)
+	{
+		s++;
+	}
 	while (*s)
 	{
 		_putchar(c);
