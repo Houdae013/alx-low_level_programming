@@ -11,10 +11,8 @@ void print_rev(char *s)
 {
 	char c = *s;
 
-	while (*s)
-	{
-		s++;
-	}
+	
+	*s = s[strlen(str) - 1];
 	while (*s)
 	{
 		_putchar(c);
