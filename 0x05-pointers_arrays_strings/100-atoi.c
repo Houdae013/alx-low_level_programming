@@ -21,7 +21,7 @@ int _atoi(char *s)
 				sign = -sign;
 				last = 1;
 			}
-			else if (last == 1)
+			else
 			{
 				break;
 			}
