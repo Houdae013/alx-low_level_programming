@@ -8,7 +8,7 @@
 
 int _atoi(char *s)
 {
-	int count = 0;
+	long count = 0;
 	int sign = 1;
 	int last = 0;
 
