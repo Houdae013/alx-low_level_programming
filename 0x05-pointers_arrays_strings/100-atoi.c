@@ -30,7 +30,7 @@ int _atoi(char *s)
 			last = 1 ;
 			count = count * 10 + (*s - 48);	
 		}
-		else if (last = 1)
+		else if (last == 1)
 			break;
 		s++;
 	}
