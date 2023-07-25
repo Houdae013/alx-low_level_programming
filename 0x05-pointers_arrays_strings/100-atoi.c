@@ -40,10 +40,10 @@ int _atoi(char *s)
 	}
 	else if (sign == -1)
 	{
-		return (-count);
+		return int(-count);
 	}
 	else
 	{
-		return (count);
+		return int(count);
 	}
 }
