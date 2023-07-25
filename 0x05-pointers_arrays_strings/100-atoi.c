@@ -28,8 +28,10 @@ int _atoi(char *s)
 		else if (*s <= '9' && *s >= '0')
 		{
 			last = 1 ;
-			count = count * 10 + (*s - 48);
+			count = count * 10 + (*s - 48);	
 		}
+		else if (last = 1)
+			break;
 		s++;
 	}
 	if (count == 0 || count == 1)
