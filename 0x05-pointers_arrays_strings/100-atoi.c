@@ -19,7 +19,6 @@ int _atoi(char *s)
 			if (last == 0)
 			{
 				sign = -sign;
-				last = 1;
 			}
 			else
 			{
@@ -28,9 +27,10 @@ int _atoi(char *s)
 		}
 		else if (*s <= '9' && *s >= '0')
 		{
+			last = 1 ;
 			count = count * 10 + (*s - 48);
 		}
-		else if (*s == '+' || *s == ' ')
+		else if (*s != '+' || *s != ' ')
 			break;
 		s++;
 	}
