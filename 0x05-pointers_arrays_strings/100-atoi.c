@@ -28,6 +28,7 @@ int _atoi(char *s)
 		else if (*s <= '9' && *s >= '0')
 		{
 			count = count * 10 + (*s - 48);
+			last = 1;
 		}
 		else if (*s == '+' || *s == ' ')
 			break;
