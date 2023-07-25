@@ -10,17 +10,26 @@ int _atoi(char *s)
 {
 	int count = 0;
 	int sign = 1;
-	
-	while(*s)
+
+	while (*s)
 	{
-		if ( *s == 45)
+		if (*s == 45)
 		{
-			sign = -sign;
+			if (last == 0)
+			{
+				sign = -sign;
+			}
+			else if (last == 1)
+			{
+				break;
+			}
 		}
 		else if (*s <= '9' && *s >= '0')
 		{
 			count = count * 10 + (*s - 48);
 		}
+		else if (*s == '+' || *s == ' ')
+			break;
 		s++;
 	}
 	if (count == 0 || count == 1)
