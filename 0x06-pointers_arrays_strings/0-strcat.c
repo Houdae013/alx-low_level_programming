@@ -11,6 +11,8 @@ char *_strcat(char *dest, char *src)
 {
 	while (*dest)
 	{
+		dest++;
+	}
 		if (*dest == '\0')
 		{
 			while (*src)
@@ -21,9 +23,6 @@ char *_strcat(char *dest, char *src)
 			}
 			dest++;
 			*dest = '\0';
-			break;
 		}
-		dest++;
-	}
 	return (dest);
 }
