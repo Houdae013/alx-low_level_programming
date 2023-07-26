@@ -12,7 +12,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 	char *p = dest;
 	int i;
-	
+
 	while (*dest)
 	{
 		dest++;
@@ -28,5 +28,5 @@ char *_strncat(char *dest, char *src, int n)
 		else
 			break;
 	}
-        return (p);
+	return (p);
 }
