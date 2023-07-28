@@ -5,10 +5,9 @@
  * Return: char
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-	char *p;
-	char *str = p;
+	char *p = str;
 	
 	while (*p)
 	{
