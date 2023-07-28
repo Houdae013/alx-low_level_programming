@@ -14,7 +14,7 @@ char *cap_string(char *str)
 		*p = *p - 32;
 	while (*p)
 	{
-		if(*p == ' ' || *p == '\n' || *p == '\t')
+		if(*p < 'A' || (*p < 'a' && *p > 'Z') || *p > 'z')
 		{
 			p++;
 			if (*p <= 'z' && *p >= 'a')
