@@ -10,14 +10,14 @@ char *cap_string(char *str)
 {
 	char *p = str;
 
-	if (*p <= 122 && *p >= 97)
+	if (*p <= 'z' && *p >= 'a')
 		*p = *p - 32;
 	while (*p)
 	{
-		if(*p == 32)
+		if(*p == ' ')
 		{
 			p++;
-			if (*p <= 122 && *p >= 97)
+			if (*p <= 'z' && *p >= 'a')
 				*p = *p - 32;
 		}
 		p++;
