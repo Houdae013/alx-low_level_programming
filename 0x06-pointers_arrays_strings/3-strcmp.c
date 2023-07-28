@@ -10,7 +10,6 @@
 int _strcmp(char *s1, char *s2)
 {
 	int diff = 0;
-	int i = 0;
 
 
 	while (*s1 && *s2)
@@ -23,10 +22,10 @@ int _strcmp(char *s1, char *s2)
 		}
 		else
 		{
-			diff = s1[i + 1] - s2[i + 1];
+			diff = *s1 - *s2;
 			return (diff);
 		}
 
 	}
-	return (0);
+	return (diff);
 }
