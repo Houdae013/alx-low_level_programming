@@ -7,7 +7,7 @@
  * Return: int
  */
 
-int _strcmp(char *s1, char *s2)
+int *_strcmp(char *s1, char *s2)
 {
 	int diff;
 	while (*s1 && *s2)
