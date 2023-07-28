@@ -14,7 +14,7 @@ char *cap_string(char *str)
 		*p = *p - 32;
 	while (*p)
 	{
-		if(*p = 32)
+		if(*p == 32)
 		{
 			p++;
 			if (*p <= 122 && *p >= 97)
