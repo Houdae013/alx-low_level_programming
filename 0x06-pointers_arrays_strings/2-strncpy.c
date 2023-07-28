@@ -8,16 +8,21 @@
  * Return: return pointer
  */
 
-char _strncpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	char *p = dest;
 	int i;
 
 	for (i = 0; i < n; i++)
 	{
-		*dest = *src;
-		src++;
-		dest++;
+		if (*src != '\0')
+		{
+			*dest = *src;
+			src++;
+			dest++;
+		}
+		else
+			break;
 	}
 	return (p);
 }
