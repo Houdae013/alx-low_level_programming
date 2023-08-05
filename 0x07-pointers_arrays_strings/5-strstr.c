@@ -15,10 +15,10 @@ char *_strstr(char *haystack, char *needle)
 
 	while (*haystack)
 	{
+		p = haystack;
 		needle = n;
 		while (*needle && *haystack && *haystack == *needle)
 		{
-			p = haystack;
 			needle++;
 			haystack++
 		}
