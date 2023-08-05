@@ -27,13 +27,15 @@ char *_strstr(char *haystack, char *needle)
 					haystack++;
 				}
 				else
+				{
+					needle = n;
 					break;
-			}
+				}
 			if (*needle == '\0')
 				return (p);
-		}
+			}
 		haystack++;
+		}
 	}
 	return (NULL);
 }
-i
