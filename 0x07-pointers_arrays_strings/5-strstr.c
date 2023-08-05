@@ -10,10 +10,12 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *p;
+	char *n = needle;
 
 
 	while (*haystack)
 	{
+		needle = n;
 		if (*haystack == *needle)
 		{
 			p = haystack;
@@ -25,12 +27,13 @@ char *_strstr(char *haystack, char *needle)
 					haystack++;
 				}
 				else
-					return (NULL);
+					break;
 			}
-			return (p);
+			if (*needle == '\0')
+				return (p);
 		}
 		haystack++;
 	}
 	return (NULL);
 }
-
+i
