@@ -12,7 +12,7 @@ char *_strpbrk(char *s, char *accept)
 	char *p = accept;
 
 
-	while (*s++)
+	while (*s)
 	{
 		accept = p;
 		while (*accept)
@@ -21,6 +21,7 @@ char *_strpbrk(char *s, char *accept)
 				return (s);
 			accept++;
 		}
+		s++;
 	}
-	return (s);
+	return (NULL);
 }
