@@ -9,8 +9,12 @@
 
 char *_strpbrk(char *s, char *accept)
 {
+	char *p = accept;
+
+
 	while (*s++)
 	{
+		accept = p;
 		while (*accept++)
 		{
 			if (*s == *accept)
