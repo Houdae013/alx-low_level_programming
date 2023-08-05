@@ -31,9 +31,9 @@ char *_strstr(char *haystack, char *needle)
 					needle = n;
 					break;
 				}
+			}
 			if (*needle == '\0')
 				return (p);
-			}
 		}
 		haystack++;
 	}
