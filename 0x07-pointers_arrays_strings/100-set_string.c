@@ -8,15 +8,5 @@
 
 void set_string(char **s, char *to)
 {
-	while (*s)
-	{
-		while (*to)
-		{
-			**s = *to;
-			to++;
-			(*s)++;
-		}
-		**s = '\0';
-		(*s)++;
-	}
+	(*s) = to;
 }
