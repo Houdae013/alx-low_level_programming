@@ -4,7 +4,7 @@
 /**
  * main- entry point
  * @argc: int nbr
- * @*argv: char
+ * @argv: char
  * Return: 1
  */
 
