@@ -1,6 +1,12 @@
 #include <stdio.h>
 
-void main()
+/**
+ * main- entry point
+ * Return: 0
+ */
+
+int main()
 {
 	printf("%s\n", __FILE__);
+	return (0);
 }
