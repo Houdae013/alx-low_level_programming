@@ -2,19 +2,19 @@
 
 /**
  * power- calculates the power of an integer
- * @b: the base integer that we will calculate it's power
+ * @n: the base integer that we will calculate it's power
  * @i: the exponent
  * Return: the result
  */
 
 unsigned int power(int n, int i)
 {
-	unsigned int r = 0;
+	unsigned int r = 1;
 	int j;
 
 	for (j = 0; j < i; j++)
 	{
-		r = n * i;
+		r = r * n;
 	}
 	return (r);
 }
@@ -29,13 +29,29 @@ unsigned int power(int n, int i)
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int d = 0;
-	int i, n = strlen(b);
+	int i = 0;
 
-	for (i = 0; i < n; i++)
+	if (b == NULL)
 	{
-		if (b[n - i - 1] != '0' && b[n - i - 1] != '1' && b[n - i - 1] == NULL)
+		return (0);
+	}
+	while (*b != '\0')
+	{
+		if (*b != '1' && *b != '0')
+		{
 			return (0);
-		d = (b[n - i - 1] - '0') * power(2, i);
+		}
+		b++;
+	}
+	b--;
+	while (*b != '\0')
+	{
+		if (*b == '1')
+		{
+			d = d + power(2, i);
+		}
+		i++;
+		b--;
 	}
 	return (d);
 }
