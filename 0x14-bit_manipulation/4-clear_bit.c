@@ -15,10 +15,10 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	{
 		return (-1);
 	}
-	if (*n >> index == 1)
+	if (((*n >> index) & p) == 1)
 	{
 		p = p << index;
-	    *n = *n ^ p;
+		*n = *n ^ p;
 	}
 	return (1);
 }
